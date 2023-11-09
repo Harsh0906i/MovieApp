@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import MovieCard from "./MovieCard";
 const API_URL = "http://www.omdbapi.com?apikey=b6003d8a";
-import SearchIcon from "./assets/Search.svg";
+// import SearchIcon from "./assets/Search.svg";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -29,11 +29,7 @@ const App = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search for movies"
         />
-        <img
-          src={SearchIcon}
-          alt="search"
-          onClick={() => searchMovies(searchTerm)}
-        />
+        <p className="para" onClick={() => searchMovies(searchTerm)}>Search </p>
       </div>
 
       {movies?.length > 0 ? (
