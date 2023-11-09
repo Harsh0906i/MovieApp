@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+.para{
+  cursor: pointer;
+  color: white;
+}
+
 :root {
   --font-roboto: "Roboto Slab", serif;
   --font-raleway: "Raleway", sans-serif;
