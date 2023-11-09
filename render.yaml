@@ -1,0 +1,6 @@
+services:
+  - name: your-app
+    type: web
+    buildCommand: npm run build
+    startCommand: node App.jsx
+    publishDir: dist
